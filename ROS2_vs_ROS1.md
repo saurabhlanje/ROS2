@@ -37,3 +37,22 @@ QoS refers to a set of parameters that define the characteristics of a communica
 Zero-copy transport is a technique used to optimize data transfer between different components in software systems. In ROS2, zero-copy transport is used to optimize the communication between nodes, resulting in faster and more efficient data transfer. Zero-copy transport enables the data to be transferred directly from the source memory to the destination memory without going through an intermediate buffer, providing significant performance benefits.
 
 In conclusion, ROS2 represents a significant improvement over ROS1 in terms of performance, flexibility, and ease-of-use, making it a more powerful and scalable platform for robotics development.
+
+
+Sure! Here is the same response in Markdown format:
+
+# ROS1 Build vs ROS2 Build
+
+The build system in ROS2 has undergone significant changes compared to ROS1. While ROS1 used the Catkin build system, which was based on CMake, ROS2 uses the Colcon build system, which is a more flexible and powerful build system.
+
+Colcon provides several benefits over Catkin, including:
+
+1. **Better Support for Multiple Languages:** Colcon supports a wide range of programming languages, including C++, Python, Java, and Rust, making it easier to develop ROS2 applications in the language of your choice.
+
+2. **Improved Build Performance:** Colcon has better build performance compared to Catkin, especially for large-scale projects with many dependencies. This is because Colcon supports parallel builds and incremental builds, which can significantly reduce build times.
+
+3. **Better Integration with Development Tools:** Colcon integrates better with popular development tools such as IDEs and debuggers, which makes it easier to develop and debug ROS2 applications.
+
+4. **Easier Cross-Compilation:** Colcon makes it easier to cross-compile ROS2 applications for different hardware platforms, which is important for robotics applications that often require running on different types of hardware.
+
+In summary, while ROS1 used the Catkin build system, which was based on CMake, ROS2 uses the Colcon build system, which provides several benefits over Catkin, including better support for multiple languages, improved build performance, better integration with development tools, and easier cross-compilation.
