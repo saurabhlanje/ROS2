@@ -1,8 +1,8 @@
 This package has to be a CMake package. Currently, there is no way to generate custom interfaces in a pure Python package.
 However, you can create a custom interface in a CMake package and then use it in a Python node.
 ### Create pkg ###
-```ros2 pkg create --build-type ament_cmake custom_interfaces --dependencies rclcpp std_msgs
-```
+```ros2 pkg create --build-type ament_cmake custom_interfaces --dependencies rclcpp std_msgs```
+
 Specify this is a CMake package with the --build-type flag set to ament_cmake
 
 
