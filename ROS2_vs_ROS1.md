@@ -37,7 +37,6 @@ Zero-copy transport is a technique used to optimize data transfer between differ
 In conclusion, ROS2 represents a significant improvement over ROS1 in terms of performance, flexibility, and ease-of-use, making it a more powerful and scalable platform for robotics development.
 
 
-Sure! Here is the same response in Markdown format:
 
 # ROS1 Build vs ROS2 Build
 
