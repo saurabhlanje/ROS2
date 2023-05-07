@@ -1,5 +1,3 @@
-Sure, here's the content of the .md file in a format that's suitable for GitHub:
-
 # Differences Between ROS1 and ROS2
 
 ROS2 is the successor to ROS1, and it includes several key differences that make it a more powerful and efficient platform for robotics development. Here are some of the main differences between ROS1 and ROS2:
