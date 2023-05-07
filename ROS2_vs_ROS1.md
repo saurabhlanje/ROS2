@@ -54,3 +54,19 @@ Colcon provides several benefits over Catkin, including:
 4. **Easier Cross-Compilation:** Colcon makes it easier to cross-compile ROS2 applications for different hardware platforms, which is important for robotics applications that often require running on different types of hardware.
 
 In summary, while ROS1 used the Catkin build system, which was based on CMake, ROS2 uses the Colcon build system, which provides several benefits over Catkin, including better support for multiple languages, improved build performance, better integration with development tools, and easier cross-compilation.
+
+Sure, here's the .md format for the updated response:
+
+## ROS1 Client Libraries
+
+ROS1 client libraries are primarily developed in C++ with a standalone Python client library called `rospy`. While ROS1 has support for other programming languages, they are less well supported than C++ and Python. 
+
+The ROS1 Python client library (`rospy`) is a standalone client library that is developed independently from the C++ client library (`roscpp`). 
+
+## ROS2 Client Libraries
+
+ROS2 client libraries are primarily developed in C++ with a Python client library called `rclpy`. `rclpy` is built on top of the C++ client library (`rclcpp`) using a language binding, providing better performance and consistency between different programming languages.
+
+By developing the ROS2 client libraries in a modular and language-independent way, ROS2 is able to support multiple programming languages with better consistency across all languages. This approach enables the development of ROS2 applications in a variety of programming languages while still maintaining the performance benefits of C++.
+
+In summary, while ROS1 has standalone client libraries for C++ and Python, ROS2 primarily relies on C++ as the primary development language, with a Python client library built on top of the C++ client library. By taking a modular and language-independent approach, ROS2 is able to better support multiple programming languages while maintaining performance and consistency across all languages.
