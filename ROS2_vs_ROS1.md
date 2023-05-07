@@ -88,3 +88,23 @@ Comparison between ROS1 and ROS2 with respect to embedded systems:
 4. **Small footprint and lower resource requirements:** ROS2 has a smaller footprint and lower resource requirements compared to ROS1. This makes it more suitable for embedded systems with limited memory and processing power. ROS2 is designed to be lightweight and efficient, and it uses a smaller set of core libraries compared to ROS1.
 
 Overall, ROS2 provides better support for embedded systems compared to ROS1 thanks to its support for microcontroller architectures, improved performance and reduced overhead, modularity and scalability, and smaller footprint and lower resource requirements.
+
+# Difference summary #
+
+
+| **Comparison Criteria** | **ROS1** | **ROS2** |
+| --- | --- | --- |
+| Communication protocol | Custom TCPROS protocol | Data Distribution Service (DDS) middleware |
+| Quality of Service (QoS) | Limited support | Comprehensive support |
+| Real-time communication | Limited support | Real-time communication support |
+| Language support | C++ and Python | C++ (with Python wrapper) and Python |
+| Client libraries | Independent libraries for C++ and Python | C++ libraries with a Python wrapper |
+| Build system | Catkin build system | CMake build system |
+| Dependency management | ROS-specific dependency management | Use of standard package managers like APT, YUM, and Homebrew |
+| Modularity and scalability | Limited modularity and scalability | More modular and scalable |
+| Performance and overhead | Higher overhead | Improved performance and reduced overhead |
+| Zero-copy transport | Not supported | Supported |
+| Support for microcontroller architectures | Limited support | Better support through the use of Micro XRCE-DDS protocol |
+| Development and maintenance | Maintenance only | Active development and maintenance |
+
+Note: This table is not an exhaustive list of differences between ROS1 and ROS2, but it covers some of the most important differences.
