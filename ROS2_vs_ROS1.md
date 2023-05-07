@@ -69,3 +69,22 @@ ROS2 client libraries are primarily developed in C++ with a Python client librar
 By developing the ROS2 client libraries in a modular and language-independent way, ROS2 is able to support multiple programming languages with better consistency across all languages. This approach enables the development of ROS2 applications in a variety of programming languages while still maintaining the performance benefits of C++.
 
 In summary, while ROS1 has standalone client libraries for C++ and Python, ROS2 primarily relies on C++ as the primary development language, with a Python client library built on top of the C++ client library. By taking a modular and language-independent approach, ROS2 is able to better support multiple programming languages while maintaining performance and consistency across all languages.
+
+Comparison between ROS1 and ROS2 with respect to embedded systems:
+
+| **Comparison Criteria** | **ROS1** | **ROS2** |
+| --- | --- | --- |
+| Support for microcontroller architectures | Limited support | Better support through the use of Micro XRCE-DDS protocol |
+| Performance and overhead | Higher overhead | Improved performance and reduced overhead through the use of DDS middleware |
+| Modularity and scalability | Limited modularity and scalability | More modular and scalable |
+| Footprint and resource requirements | Larger footprint and higher resource requirements | Smaller footprint and lower resource requirements |
+
+1. **Support for microcontroller architectures:** ROS2 has better support for microcontroller architectures such as ARM Cortex-M and RISC-V, which are commonly used in embedded systems. This is achieved through the use of the Micro XRCE-DDS protocol, which is a lightweight and efficient data distribution protocol that is specifically designed for resource-constrained systems. ROS1, on the other hand, has limited support for microcontroller architectures.
+
+2. **Improved performance and reduced overhead:** ROS2 has improved performance and reduced overhead compared to ROS1, which makes it more suitable for resource-constrained systems like embedded computers. ROS2 uses the DDS (Data Distribution Service) middleware to provide efficient and reliable communication between nodes, while ROS1 uses a custom TCPROS protocol, which has higher overhead.
+
+3. **Modularity and scalability:** ROS2 is designed to be more modular and scalable than ROS1. This means that ROS2 can be customized to meet the specific needs of different embedded systems. ROS2 provides a set of building blocks that can be combined to create custom middleware solutions that are tailored to the specific requirements of each system. This modularity and scalability is important for embedded systems, which often have unique hardware and software constraints.
+
+4. **Small footprint and lower resource requirements:** ROS2 has a smaller footprint and lower resource requirements compared to ROS1. This makes it more suitable for embedded systems with limited memory and processing power. ROS2 is designed to be lightweight and efficient, and it uses a smaller set of core libraries compared to ROS1.
+
+Overall, ROS2 provides better support for embedded systems compared to ROS1 thanks to its support for microcontroller architectures, improved performance and reduced overhead, modularity and scalability, and smaller footprint and lower resource requirements.
