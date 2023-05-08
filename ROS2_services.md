@@ -147,7 +147,14 @@ setup(
 )
 ```
 
+### Service can be called in two ways ###
 
+#### Synchronous call ####
+A synchronous client will block the calling thread when sending a request to a service until a response has been received; nothing else can happen on that thread during the call. The call can take arbitrary amounts of time to complete. Once complete, the response returns directly to the client.
 
+#### Asynchronous calls ####
+Async calls in rclpy are entirely safe and the recommended method of calling services. They can be made from anywhere without running the risk of blocking other ROS and non-ROS processes, unlike sync calls.
+
+It is not recommended to implement a synchronous service client. They are susceptible to deadlock, but will not provide any indication of issue when deadlock occurs. If you must use synchronous calls, the example in section 1 Synchronous calls is a safe method of doing so. You should also be aware of the conditions that cause deadlock outlined in section 1.1 Sync deadlock. We recommend using async service clients instead.
 
 
