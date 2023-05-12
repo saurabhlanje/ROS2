@@ -1,5 +1,3 @@
-Certainly! Here's the information about the `try-except-else-finally` construct in Markdown format:
-
 ## `try-except-else-finally` in Python
 
 In addition to `try` and `finally`, the `try-except-else-finally` construct is another exception handling mechanism available in Python. It provides more fine-grained control over exception handling and code execution.
