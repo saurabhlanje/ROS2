@@ -17,7 +17,7 @@
 ## ros2 action list -t ##
 ## ros2 action info /turtle1/rotate_absolute ##
 ## ros2 interface show turtlesim/action/RotateAbsolute ##
-## ros2 action send_goal <action_name> <action_type> <values> ##
+## ros2 action send_goal <action_name> <action_type> <values>  ##
     Example
     ```  
     ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 1.57}"  
@@ -30,3 +30,8 @@
     ``` 
     ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: -1.57}" --feedback 
     ```
+ ## Structure of Action ## 
+    1)The message of a Topic is composed of a single part: the information the Topic provides.
+    2)The message of a Service has two parts: the request and the response.
+    3)The message of an Action Server is divided into three parts: the goal, the result, and the feedback
+   
